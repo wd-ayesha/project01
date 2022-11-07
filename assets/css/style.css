@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.active{
+    color: #B06848 !important;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../img/01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    height: 15vh;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+nav .logo{
+    width: 25%;
+    text-align: center;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale( .75);
+    }
+    20% {
+        transform: scale( 1);
+    }
+    40% {
+        transform: scale( .75);
+    }
+    60% {
+        transform: scale( 1);
+    }
+    80% {
+        transform: scale( .75);
+    }
+    100% {
+        transform: scale( .75);
+    }
+}
+
+.heart {
+    animation: heartbeat 1s infinite;
+}
+
+.menu{
+    width: 45%;
+    text-align: center;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: .7s;
+    font-weight: bold;
+    font-size: 15px;
+}
+.menu ul li a:hover{
+    color: #B06848;
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 2px 1px 5px black;
+    margin: 30px 0 20px 0;
+}
+section h1{
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+.place_name:after{
+    content: '';
+    animation: changeText 10s infinite linear;
+    color: #B06848;
+}
+@keyframes changeText{
+    0% {
+        content: "Sundarbans";
+    }
+    20% {
+        content: "Srimagal";
+    }
+    40% {
+        content: "Rangamati";
+    }
+    60% {
+        content: "Paharpur";
+    }
+    80% {
+        content: "Lalbag Fort";
+    }
+    100% {
+        content: "Jaflong";
+    }
+}
+section p{
+    font-size: 30px;
+    word-spacing: 2px;
+    margin: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+.btn01{
+    background: #B0AFB1;
+    color: #000;
+}
+.btn01:hover{
+    background: #B06848;
+    color: #fff;
+}
+
+.btn02{
+    background: #B06848;
+    color: #fff;
+}
+.btn02:hover{
+    background: #B0AFB1;
+    color: #000;
+}
+/* small device */
+@media screen and (min-width: 370px) and (max-width: 560px) {
+    .logo{
+        display: none;
+    }
+    .menu{
+        width: 100%;
+    }
+    .menu ul li a{
+        font-size: 12px;
+    }
+    section h3{
+        font-size: 24px;
+        text-shadow: 2px 1px 6px rgb(249, 114, 42);
+    }
+    section h1{
+        font-size: 46px;
+        text-shadow: 1px 1px 6px rgb(19, 87, 3);
+    }
+    section p{
+        font-size: 25px;
+    }
+    section a{
+        padding: 10px 16px;
+        font-size: 11px;
+    }
+}
+
+/* large device */
+@media screen and (min-width: 561px) and (max-width: 1000px) {
+    .logo{
+        color: rgb(239, 167, 128);
+    }
+    .menu{
+        width: 100%;
+    }
+    .menu ul li a{
+        font-size: 14px;
+    }
+    section h3{
+        font-size: 26px;
+    }
+    section h1{
+        font-size: 40px;
+    }
+    section p{
+        font-size: 28px;
+    }
+    section a{
+        padding: 12px 18px;
+        font-size: 12px;
+    }
+}
