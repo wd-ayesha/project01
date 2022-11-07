@@ -160,7 +160,7 @@ section a{
     color: #000;
 }
 /* small device */
-@media screen and (min-width: 360px) and (max-width: 560px) {
+@media screen and (min-width: 350px) and (max-width: 560px) {
     .logo{
         display: none;
     }
